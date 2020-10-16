@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="topnav">
+		<nav class="menu">
+			<ul>
+        <li>
+					<a href="../">Home</a>
+				</li>
+				<li>
+					<a href="../profil/">Profil</a>
+				</li>
+				<li>
+					<a href="./">Hometown</a>
+				</li>
+				<li>
+					<a href="../food/">Local Food</a>
+        </li>
+        <li>
+          <a href="../tourist/">Tourist Place</a>
+        </li>
+			</ul>
+    </nav>
+  </div>
+    
+ 
+  <div style="text-align:center; font-family: Georgia;margin-left: 10%;margin-right: 10%;">
+    <h1>My Hometown</h1>
+    <p style="text-align: justify;">Banjarbaru is a city in the province of South Kalimantan and its my hometown. Banjarbaru is very green and fresh. You could find many trees around your home if you lived there. 
+       In Banjarbaru there are not too many people like in Jakarta, Surabaya or other big cities in Indonesia. About the weather in Banjarbaru, because its location is near with passed by equator line 
+       and many forest are there, the weather is not really affected by moonson wind. As you can see there are several icon of Banjarbaru, from the right there are Logo , Bundaran Simpang 4, Balai Kota and Maps of Banjarbaru.
+       Click the photo below to see the detail.
+    </p>
+  </div>
+  
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="https://banjarbarukota.go.id/css/images/banjarbaru.png" alt="Logo" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://www.itrip.id/wp-content/uploads/2019/10/Wisata-Banjarbaru.jpg" alt="Tower" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://kanalkalimantan.com/wp-content/uploads/2020/08/IMG-20200801-WA0004.jpg" alt="Balai Kota" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="https://1.bp.blogspot.com/-_nnqJsP5bik/WKXJ2e_dqII/AAAAAAAADY0/pY4MuRLqI8AmdaQ7WFFOpjNAh6fmILm_gCLcB/s3200/Peta%2BAdministrasi%2Bkota%2Bbanjarbaru.jpg" alt="Maps" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+    <div class="buttomnavbar">
+        <h1>Copyright © 2020 Sitti Chofifah</h1>
+    </div>
+
+  </body>
+</html>

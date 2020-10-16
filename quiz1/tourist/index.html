@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="topnav">
+		<nav class="menu">
+			<ul>
+        <li>
+					<a href="../">Home</a>
+				</li>
+				<li>
+					<a href="../profil/">Profil</a>
+				</li>
+				<li>
+					<a href="../hometown/">Hometown</a>
+				</li>
+				<li>
+					<a href="../food/">Local Food</a>
+        </li>
+        <li>
+          <a href="./">Tourist Place</a>
+        </li>
+			</ul>
+        </nav>
+    </div>
+    
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/03/3-2-Lok-Baintan-By-zerie_.jpg" style="width:100%">
+      <div class="text">Lok Baintan</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/03/9-a-4-Mandiangin-by-muhammdrizki.jpg" style="width:100%">
+      <div class="text">Tahura Mandiangin</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/03/9-b-1-Telang-by-ferdayu_.jpg" style="width:100%">
+        <div class="text">Bukit Telang</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2018/03/12-a-2-Pamalikan-by-irvandi.ridho_.jpg" style="width:100%">
+        <div class="text">Pulau Pamalikan</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div style="text-align: center; font-family: Georgia;margin-left: 30%;margin-right: 30%;">
+      <h1>Tourist Place</h1>
+      <p style="text-align: justify;">If you are visiting South Kalimantan anytime soon, then make sure to keep these beautiful places in South Kalimantan to your bucket list and enjoy the natures beauty. 
+        Lets find out what makes South Kalimantan so special.
+        <li style="text-align: left;">Pasar Terapung</li>
+        <p style="text-align: justify;">One of the interesting places that must be visited when traveling to Banjarmasin is the Floating Market. The market, which is a reflection of the Banjarese culture, has been going on for a long time; since 400 years ago when trading was still using the barter system. This market is also an illustration of the lifestyle of people living on water. So it can be said that this floating market has witnessed the development of the activities of the people of Banjarmasin.</p>
+        <li style="text-align: left;">Tahura Mandiangin</li>
+        <p style="text-align: justify;">The most fun place to enjoy natural scenery is from the highlands. In South Kalimantan, to be able to do this, you can head to Tahura Mandingin. Not only that, if you come at the right time and place, you can also see the clouds moving slowly covering the earth's landscape from above. Very beautiful!</p>
+        <li style="text-align: left;">Bukit Telang</li>
+        <p style="text-align: justify;">As far as the eyes can see, what you see is green hills. That's the impression you get from the top of Bukit Telang. The scenery and panorama of this hill is no less beautiful than the savanna hills on the island of Sumba, East Nusa Tenggara or even New Zealand!</p>
+        <li style="text-align: left;">Pulau Pamalikan</li>
+        <p style="text-align: justify;">The island is small, but the panoramic views offered are extraordinary. Pamalik Island deserves to be one of your main tourist destinations in South Kalimantan.
+          The underwater world around Pamalik Island is equally beautiful. Snorkeling is a mandatory activity that must be done here because the coral reefs and water clarity are very good.</p>
+      </p>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    <div class="buttomnavbar">
+        <h1>Copyright © 2020 Sitti Chofifah</h1>
+    </div>
+
+</body>
+</html>

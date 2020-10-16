@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background: #fff1c1;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background: #fff1c1;
+	height:1px;
+}		
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background: #fe5f55;
+}
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+  list-style: none;
+  float: left;
+	padding:0;
+	width: 800px;
+	margin: auto;
+	background: #fe5f55;
+	text-align: center;
+  position: relative;	
+}
+
+nav.menu ul li {
+	margin:auto;
+	float:left;
+}
+
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background:  #f28780;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    width: 200px;
+    height: 300px;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+.buttomnavbar {
+    overflow: hidden;
+    width: 100%;
+    background: #fe5f55;
+    bottom: 0px;
+    position: relative;
+    padding: 15px;
+}
+
+.buttomnavbar h1 {
+    text-align: center;
+    font-weight:600;
+    font-size: 16px;
+    text-transform: uppercase;
+}

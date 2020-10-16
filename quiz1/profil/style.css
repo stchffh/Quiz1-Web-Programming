@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background: #fff1c1;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background: #fff1c1;
+	height:1px;
+}		
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background: #fe5f55;
+ 
+}
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+  list-style: none;
+  float: left;
+	padding:0;
+	width: 800px;
+	margin: auto;
+	background: #fe5f55;
+	text-align: center;
+  position: relative;	
+}
+
+nav.menu ul li {
+	margin:auto;
+	float:left;
+}
+
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background: #f28780;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #a64942;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.caption {
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #fe5f55;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.buttomnavbar {
+    overflow: hidden;
+    width: 100%;
+    background: #fe5f55;
+    bottom: 0px;
+    position: relative;
+    padding: 15px;
+}
+
+.buttomnavbar h1 {
+    text-align: center;
+    font-weight:600px;
+    font-size: 16px;
+    text-transform: uppercase;
+}

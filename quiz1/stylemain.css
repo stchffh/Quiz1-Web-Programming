@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background:#fff1c1;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background:#fff1c1;
+	height:1px;
+}		
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background: #fe5f55;
+ 
+}
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+    list-style: none;
+    float: left;
+	padding:0;
+	width: 800px;
+	margin: auto;
+	background: #fe5f55;
+	text-align: center;
+    position: relative;	
+}
+
+nav.menu ul li {
+	margin:auto;
+	float:left;
+}
+
+nav.menu ul a {
+	padding:25px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background: #f28780;
+}
+
+.titleflipcard {
+	margin-left: 150px;
+	font-family: Georgia;
+	text-transform: uppercase;
+
+}
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	margin-left: 50px;
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 #fff;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	background-color: #fff;
+	color: black;
+  }
+  
+  .flip-card-back {
+	background-color: #fe5f55;
+	color: white;
+	transform: rotateY(180deg);
+	text-align: center;
+  }
+
+  .captionflipcard {
+	  margin-left: 150px;
+	  font-family: 'Georgia', sans-serif;
+  }
+
+.blog {
+    width: 200px;
+    left: 400px;
+    top: 70px;
+    position: absolute;
+    
+    
+}
+
+.content {
+	width:600px;
+	padding:25px;
+	margin:25px;
+	background: #fff;
+	border:1px solid #dedede;
+	
+}
+
+.content img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+}
+
+.content h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+
+.content .continue-content {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+}
+
+.content .continue-content:hover {
+	margin-left:10px;
+}
+
+
+.buttomnavbar {
+    overflow: hidden;
+    width: 100%;
+    background: #fe5f55;
+    bottom: -2100px;
+	position: relative;
+	padding: 15px;
+}
+
+.buttomnavbar h1 {
+    text-align: center;
+    font-weight:600;
+    font-size: 16px;
+    text-transform: uppercase;
+}

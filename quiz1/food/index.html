@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="topnav">
+		<nav class="menu">
+			<ul>
+        <li>
+					<a href="../">Home</a>
+				</li>
+				<li>
+					<a href="../profil/">Profil</a>
+				</li>
+				<li>
+					<a href="../hometown/">Hometown</a>
+				</li>
+				<li>
+					<a href="./">Local Food</a>
+        </li>
+        <li>
+          <a href="../tourist/">Tourist Place</a>
+        </li>
+			</ul>
+    </nav>
+  </div>
+    
+<h1 style="text-align:center;font-family: Georgia;">Local Food</h1>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://foodnesia.net/wp-content/uploads/2020/02/soto-banjar-khas-banjarmasin.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://foodnesia.net/wp-content/uploads/2020/02/nasi-kuning-banjar-khas-banjarmasin.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://foodnesia.net/wp-content/uploads/2020/02/ketupat-kandangan-khas-banjarmasin.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://foodnesia.net/wp-content/uploads/2020/02/bubur-baayak-khas-banjarmasin.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://foodnesia.net/wp-content/uploads/2020/02/kue-apam-barabai-khas-banjarmasin.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://foodnesia.net/wp-content/uploads/2020/02/kue-bingka-khas-banjarmasin.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://foodnesia.net/wp-content/uploads/2020/02/soto-banjar-khas-banjarmasin.jpg" style="width:100%" onclick="currentSlide(1)" alt="Soto Banjar">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://foodnesia.net/wp-content/uploads/2020/02/nasi-kuning-banjar-khas-banjarmasin.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nasi Kuning Banjar">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://foodnesia.net/wp-content/uploads/2020/02/ketupat-kandangan-khas-banjarmasin.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ketupat Kandangan">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://foodnesia.net/wp-content/uploads/2020/02/bubur-baayak-khas-banjarmasin.jpg" style="width:100%" onclick="currentSlide(4)" alt="Bubur Baayak">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://foodnesia.net/wp-content/uploads/2020/02/kue-apam-barabai-khas-banjarmasin.jpg" style="width:100%" onclick="currentSlide(5)" alt="Apam Barabai">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://foodnesia.net/wp-content/uploads/2020/02/kue-bingka-khas-banjarmasin.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kue Bingka">
+    </div>
+  </div>
+</div>
+
+<div class="caption">
+  <p> As you can see in the photo above, there are many traditional food from South Kalimantan. There are Soto Banjar, Nasi Kuning Banjar, Ketupat Kandangan, Bubur Baayak, Kue Apam Barabai and Kue Bingka.
+      <p>Soto Banjar is a traditional food that you definitely have to try. When you compared Soto Banjar with other cities in Indonesia such as Soto Lamongan, Soto Madura, there is a difference which has strong aroma and flavor.
+      </p>
+      <p>Nasi Kuning Banjar is a traditional food from South Kalimantan that have a unique aroma because it cooks with pandan leaves that create a delicious and seductive aroma.
+      </p>
+      <p>Ketupat Kandangan is almost same as other ketupat, the difference is the addition of snakehead fish which is used as complement.
+      </p>
+      <p>Bubur Baayak is one of typical porridge from South Kalimantan. It has a brown color with a blend of sweet and savory flavor that you guys have to try. 
+      </p>
+      <p> Barabai is a wet cake made from rice flour , coconut, brown sugar and cassava tape. The taste of Apam Barabai is very distinctive, savory,and sweet, the aroma also has a strong aroma form palm sugar. 
+      </p>
+      The last one is Bingka. Bingka is on of typical cake from South Kalimantan . It tastes very sweet and soft
+  </p>
+</div>
+    <div class="buttomnavbar">
+        <h1>Copyright © 2020 Sitti Chofifah</h1>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
